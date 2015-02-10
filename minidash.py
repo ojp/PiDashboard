@@ -64,7 +64,7 @@ while True:
                 window.blit(label3, (10,210))
                 window=pygame.transform.flip(window,1,1)
                 pygame.image.save(window, "/app/temp.bmp")
-                os.system("tft_bmp /app/temp.bmp")
+                os.system("/app/tft_bmp /app/temp.bmp")
                 time.sleep(wait)
 
         except:
