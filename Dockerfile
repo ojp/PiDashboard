@@ -1,10 +1,9 @@
 FROM resin/rpi-raspbian:wheezy-2015-01-15
 
-ENV TIMEZONE Europe/Amsterdam
+RUN apt-get install locales
 
-# Correct Timezone
-RUN echo ZONE="$TIMEZONE" > /etc/sysconfig/clock && \
-    cp "/usr/share/zoneinfo/$TIMEZONE" /etc/localtime
+# Configure timezone and locale
+RUN echo "Europe/Amsterdam" > /etc/timezone; dpkg-reconfigure -f noninteractive tzdata
 
 # Install Python.
 RUN apt-get update && apt-get install -y python
