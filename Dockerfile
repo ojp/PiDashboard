@@ -1,7 +1,5 @@
 FROM resin/rpi-raspbian:wheezy-2015-01-15
 
-RUN apt-get install locales
-
 # Configure timezone and locale
 RUN echo "Europe/Amsterdam" > /etc/timezone; dpkg-reconfigure -f noninteractive tzdata
 
