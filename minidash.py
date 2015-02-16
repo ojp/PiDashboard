@@ -13,10 +13,10 @@ import datetime
 pygame.init()
 dag=0
 wait=58
-h_off=17
-m_off=50
-h_on=7
-m_on=15
+h_off=16
+m_off=46
+h_on=16
+m_on=50
 ws=1
 window = pygame.display.set_mode((320,240))
 font0 = pygame.font.SysFont("droidsans", 15)
