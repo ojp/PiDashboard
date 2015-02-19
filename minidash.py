@@ -67,7 +67,7 @@ while True:
 #                pygame.draw.line(window, pygame.Color(0,0,255), (0,210), (319,210))
                 pygame.draw.line(window, pygame.Color(0,0,255), (0,239), (319,239))
                 label2 = font2.render(time.strftime("%d.%m.%Y", lt), 1, (0,0,0))
-                window.blit(label1, (0,60))
+                window.blit(label1, (0,70))
                 window.blit(label2, (0,115))
                 window.blit(label0, (0,0))
                 window.blit(label4, (0,25))
